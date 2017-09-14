@@ -6,14 +6,13 @@ public class Student implements Comparable {
 	private String fullName;
 	private Date birthDate;
 	private double avgMark;
-	private double totMark;
 
-	public Student(int id, String fullName, Date birthDate, double avgMark,double totMark) {
+	public Student(int id, String fullName, Date birthDate, double avgMark) {
 		this.id = id;
 		this.fullName = fullName;
 		this.birthDate = birthDate;
 		this.avgMark = avgMark;
-		this.totMark = totMark;
+		
 	}
 
 	public int getId() {
@@ -48,9 +47,7 @@ public class Student implements Comparable {
 		this.avgMark = avgMark;
 	}
 	
-	public void setTotMark(double totMark) {
-		this.totMark = totMark;
-	}
+	
 
 	@Override
 	public int hashCode() {
